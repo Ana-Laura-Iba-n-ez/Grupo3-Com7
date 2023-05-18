@@ -1,7 +1,7 @@
 '''
-Función añadir, sólo sirve para el desafío 4: La Inmobiliaria.
+Función agregar, sólo sirve para el desafío 4: La Inmobiliaria.
 '''
-def añadir():
+def agregar():
     print('Inserte los datos del inmueble: ')
     inmueble = {}
     inmueble['año'] = input('Año: ')
@@ -11,5 +11,3 @@ def añadir():
     inmueble['zona'] = input('Zona: ')
     inmueble['estado'] = input('Estado: ')
     return inmueble
-
-añadir()
