@@ -11,6 +11,6 @@ while True:
          print()
     elif venta_o_inventario == '2':
         print('Seleccione una opción: ')
-        camino = input('1 - Agregar inmueble.\n2 - Editar inmueble.\n'
+        camino = input('1 - Añadir inmueble.\n2 - Editar inmueble.\n'
                        '3 - Eliminar inmueble.\n')
 
