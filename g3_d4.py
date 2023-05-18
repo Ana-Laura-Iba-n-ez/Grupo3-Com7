@@ -14,14 +14,14 @@ while True:
          print()
     elif eleccion == '2':
         print('Seleccione una opción: ')
-        camino = input('1 - Agregar inmueble.\n2 - Editar inmueble.\n'
-                       '3 - Eliminar inmueble.\n')
-        if camino == '1':
+        inventario = input('1 - Agregar inmueble.\n2 - Editar inmueble.\n'
+                           '3 - Eliminar inmueble.\n')
+        if inventario == '1':
             inmuebles.append(agregar())
             print(inmuebles)
-        elif camino == '2':
+        elif inventario == '2':
             print('Ingrese los datos del inmueble que desea editar:')
-        elif camino == '3':
+        elif inventario == '3':
             print('Ingrese los datos del objeto que desea eliminar:')
         else:
             print('No ha seleccionado un número válido, inténtelo de nuevo.')
