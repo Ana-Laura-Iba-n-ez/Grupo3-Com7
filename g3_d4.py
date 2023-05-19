@@ -1,12 +1,20 @@
 '''
 Desafío 4: La inmobiliaria
+FALTAN:
+Modificar la funcion agregar para que sólo acepte un mueble si cuenta con las
+reglas de validación.
+Función editar.
+Función eliminar.
+acciones para vender.
+funcion calcular precio.
+Lo que falte de las consignas.
 '''
 import func_agregar
 from func_agregar import agregar
 inmuebles = []        #lista con el total de inmuebles
 
 while True:
-    print('\nBienvenido/a al sistema de gestión de inmuebles.')
+    print('\nBienvenido/a al Sistema de Gestión de Inmuebles.')
     eleccion = input('1 - Realizar una venta.\n'
                      '2 - Administrar inventario.\n'
                      '3 - Salir del programa.')
