@@ -1,7 +1,6 @@
-# Función para eliminar un inmueble de la lista
-
-inmuebles = []
-
+'''
+Función para eliminar un inmueble de la lista
+'''
 def eliminar(inmuebles):
     indice = int(input("Ingrese el índice del inmueble a eliminar: "))
 
@@ -9,3 +8,5 @@ def eliminar(inmuebles):
         print("El índice del inmueble a eliminar no es válido.")
         return
     del inmuebles[indice]
+
+
