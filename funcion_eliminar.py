@@ -8,5 +8,5 @@ def eliminar(inmuebles):
         print("El índice del inmueble a eliminar no es válido.")
         return
     del inmuebles[indice]
-   
-    
+    print(inmuebles)
+

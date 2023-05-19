@@ -2,7 +2,7 @@
 Función para calcular el precio de un inmueble en función de la zona
 '''
 def calcular_precio(inmueble):
-    precio_base = inmueble["metros"] * 100 + inmueble["habitaciones"] * 500 + int(inmueble["garaje"]) * 1500
+    precio_base = inmueble["metros"] * 100 + inmueble["habitaciones"] * 500 + inmueble["garage"] * 1500
     antiguedad = 2023 - inmueble["año"]
     if inmueble["zona"] == "A":
         precio = precio_base * (1 - antiguedad / 100)
@@ -12,4 +12,3 @@ def calcular_precio(inmueble):
         precio = precio_base * (1 - antiguedad / 100) * 2
     return precio
 
-# Isaac

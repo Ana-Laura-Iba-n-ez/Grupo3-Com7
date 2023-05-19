@@ -34,16 +34,22 @@ while True:
     if eleccion == '1':
         cambiar_estado(inmuebles)
     elif eleccion == '2':
-        buscar_por_presupuesto(inmuebles)
+        precio = int(input('Ingrese el presupuesto disponible: '))
+        print(buscar_por_presupuesto(inmuebles, precio))
     elif eleccion == '3':
         print('Seleccione una opción: ')
         inventario = input('1 - Agregar inmueble.\n2 - Editar inmueble.\n'
                            '3 - Eliminar inmueble.\n')
         if inventario == '1':
-            inmuebles.append(agregar())
-            for i in inmuebles:
-                if i == False:
-                    inmuebles.pop()
+            seguir = True
+            while seguir:
+                inmuebles.append(agregar())
+                for i in inmuebles:
+                    if i == False:
+                        inmuebles.pop()
+                agregar_otro = input('Desea agregar otro inmueble? s/n: ')
+                if agregar_otro == 'n':
+                    seguir = False
         elif inventario == '2':
             print('Ingrese los datos del inmueble que desea editar:')
         elif inventario == '3':
