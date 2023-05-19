@@ -11,14 +11,16 @@ Lo que falte de las consignas.
 '''
 import funcion_agregar
 from funcion_agregar import agregar
+import inmueble_por_presupuesto
+from inmueble_por_presupuesto import buscar_por_presupuesto
 inmuebles = []        #lista con el total de inmuebles
 
 while True:
     print('\nBienvenido/a al Sistema de Gestión de Inmuebles.')
     eleccion = input('1 - Cambiar estado de un inmueble.\n'
                      '2 - Buscar inmuebles por presupuesto.\n'
-                     '2 - Administrar inventario.\n'
-                     '3 - Salir del programa.\n')
+                     '3 - Administrar inventario.\n'
+                     '4 - Salir del programa.\n')
     if eleccion == '1':
         print('Cambio del estado de un inmueble: ')
         print('Inserte los datos del inmueble: ')
@@ -32,10 +34,10 @@ while True:
                 print('El estado del inmueble ha sido actualizado.')
                 indice = i
                 break
-        if indice is None:
-            print('No se encontró un inmueble que coincida con los datos proporcionados.')
+            if indice is None:
+                print('No se encontró un inmueble que coincida con los datos proporcionados.')
     elif eleccion == '2':
-        print()
+        buscar_por_presupuesto(inmuebles)
     elif eleccion == '3':
         print('Seleccione una opción: ')
         inventario = input('1 - Agregar inmueble.\n2 - Editar inmueble.\n'
