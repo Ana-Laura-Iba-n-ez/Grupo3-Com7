@@ -32,16 +32,16 @@ while True:
     if eleccion == '1':
         print('Cambio del estado de un inmueble: ')
         buscar = agregar()
-        indice = None
-        for i, inmueble in enumerate(inmuebles):
+        print(buscar)
+        for inmueble in inmuebles:
             if inmueble == buscar:
-                print(f'El inmueble número {i} coincide con todos los campos.')
+                print(f'Este inmueble coincide con todos los campos.')
+                print(inmueble)
                 nuevo_estado = input('Ingrese el nuevo estado del inmueble: ')
-                inmuebles[i]['estado'] = nuevo_estado
+                inmueble['estado'] = nuevo_estado
                 print('El estado del inmueble ha sido actualizado.')
-                indice = i
                 break
-            if indice is None:
+            else:
                 print('No se encontró un inmueble que coincida con los datos proporcionados.')
     elif eleccion == '2':
         buscar_por_presupuesto(inmuebles)
