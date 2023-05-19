@@ -13,6 +13,9 @@ import funcion_agregar
 from funcion_agregar import agregar
 import inmueble_por_presupuesto
 from inmueble_por_presupuesto import buscar_por_presupuesto
+import funcion_eliminar
+from funcion_eliminar import eliminar
+
 inmuebles = []        #lista con el total de inmuebles
 
 while True:
@@ -55,8 +58,7 @@ while True:
         elif inventario == '2':
             print('Ingrese los datos del inmueble que desea editar:')
         elif inventario == '3':
-            print('Ingrese los datos del objeto que desea eliminar:')
-            
+            eliminar(inmuebles)
         else:
             print('No ha seleccionado un número válido, inténtelo de nuevo.')
             continue
