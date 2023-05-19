@@ -25,6 +25,11 @@ while True:
         print('Cambio del estado de un inmueble: ')
         print('Inserte los datos del inmueble: ')
         buscar = agregar()
+        for i in inmuebles:
+            if i in buscar:
+                print(f'El inmueble numero{inmuebles.index(buscar)}'
+                      'coincide con todos los campos')
+                vender = input('Desea cambiar el estado a "vendido"? s/n: ')
         indice = None
         for i, inmueble in enumerate(inmuebles):
             if inmueble == buscar:
