@@ -17,11 +17,11 @@ import funcion_eliminar
 from funcion_eliminar import eliminar
 
 inmuebles = []        #lista con el total de inmuebles
-inmuebles = [{'año': 2010, 'metros': 150, 'habitaciones': 4, 'garaje': True, 'zona': 'C', 'estado': 'Disponible'},
-{'año': 2016, 'metros': 80, 'habitaciones': 2, 'garaje': False, 'zona': 'B', 'estado': 'Reservado'},
-{'año': 2000, 'metros': 180, 'habitaciones': 4, 'garaje': True, 'zona': 'A', 'estado': 'Disponible'},
-{'año': 2015, 'metros': 95, 'habitaciones': 3, 'garaje': True, 'zona': 'B', 'estado': 'Vendido'},
-{'año': 2008, 'metros': 60, 'habitaciones': 2, 'garaje': False, 'zona': 'C', 'estado': 'Disponible'}] 
+inmuebles = [{'año': 2010, 'metros': 150, 'habitaciones': 4, 'garage': True, 'zona': 'C', 'estado': 'Disponible'},
+{'año': 2016, 'metros': 80, 'habitaciones': 2, 'garage': False, 'zona': 'B', 'estado': 'Reservado'},
+{'año': 2000, 'metros': 180, 'habitaciones': 4, 'garage': True, 'zona': 'A', 'estado': 'Disponible'},
+{'año': 2015, 'metros': 95, 'habitaciones': 3, 'garage': True, 'zona': 'B', 'estado': 'Vendido'},
+{'año': 2008, 'metros': 60, 'habitaciones': 2, 'garage': False, 'zona': 'C', 'estado': 'Disponible'}] 
 
 while True:
     print('\nBienvenido/a al Sistema de Gestión de Inmuebles.')
@@ -30,19 +30,7 @@ while True:
                      '3 - Administrar inventario.\n'
                      '4 - Salir del programa.\n')
     if eleccion == '1':
-        print('Cambio del estado de un inmueble: ')
-        buscar = agregar()
-        print(buscar)
-        for inmueble in inmuebles:
-            if inmueble == buscar:
-                print(f'Este inmueble coincide con todos los campos.')
-                print(inmueble)
-                nuevo_estado = input('Ingrese el nuevo estado del inmueble: ')
-                inmueble['estado'] = nuevo_estado
-                print('El estado del inmueble ha sido actualizado.')
-                break
-            else:
-                print('No se encontró un inmueble que coincida con los datos proporcionados.')
+        
     elif eleccion == '2':
         buscar_por_presupuesto(inmuebles)
     elif eleccion == '3':
