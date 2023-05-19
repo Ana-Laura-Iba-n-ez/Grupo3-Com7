@@ -56,6 +56,7 @@ while True:
             print('Ingrese los datos del inmueble que desea editar:')
         elif inventario == '3':
             print('Ingrese los datos del objeto que desea eliminar:')
+            
         else:
             print('No ha seleccionado un número válido, inténtelo de nuevo.')
             continue
