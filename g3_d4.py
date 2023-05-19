@@ -1,13 +1,5 @@
 '''
 Desafío 4: La inmobiliaria
-FALTAN:
-Modificar la funcion agregar para que sólo acepte un mueble si cuenta con las
-reglas de validación.
-Función editar.
-Función eliminar.
-acciones para vender.
-funcion calcular precio.
-Lo que falte de las consignas.
 '''
 import funcion_agregar
 from funcion_agregar import agregar
@@ -19,11 +11,6 @@ import funcion_cambiar_estado
 from funcion_cambiar_estado import cambiar_estado
 
 inmuebles = []        #lista con el total de inmuebles
-inmuebles = [{'año': 2010, 'metros': 150, 'habitaciones': 4, 'garage': True, 'zona': 'C', 'estado': 'Disponible'},
-{'año': 2016, 'metros': 80, 'habitaciones': 2, 'garage': False, 'zona': 'B', 'estado': 'Reservado'},
-{'año': 2000, 'metros': 180, 'habitaciones': 4, 'garage': True, 'zona': 'A', 'estado': 'Disponible'},
-{'año': 2015, 'metros': 95, 'habitaciones': 3, 'garage': True, 'zona': 'B', 'estado': 'Vendido'},
-{'año': 2008, 'metros': 60, 'habitaciones': 2, 'garage': False, 'zona': 'C', 'estado': 'Disponible'}] 
 
 while True:
     print('\nBienvenido/a al Sistema de Gestión de Inmuebles.')
@@ -61,5 +48,11 @@ while True:
         print('Gracias por utilizar Sistema de Gestión de Inmuebles.')
         break
     
+# INTEGRANTES
+# Ibañez, Ana Laura.
+# Zalazar, Francisco Ezequiel.
+# Messa Torres, María Salomé.
+# Bentolila, Isaac.
+# Sanchez, Ramon Victor.
 
 
