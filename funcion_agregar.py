@@ -9,7 +9,11 @@ def agregar():
     inmueble['año'] = int(input('Año: '))
     inmueble['metros'] = int(input('Metros: '))
     inmueble['habitaciones'] = int(input('Habitaciones: '))
-    inmueble['garage'] = bool(input('Garage: '))
+    inmueble['garage'] = (input('Garage: '))
+    if inmueble['garage'] == 'True':
+        inmueble['garage'] = True
+    elif inmueble['garage'] == 'False':
+        inmueble['garage'] = False
     inmueble['zona'] = input('Zona: ')
     inmueble['estado'] = input('Estado: ')
     if (inmueble['zona'] in ['A', 'B', 'C'] and 
