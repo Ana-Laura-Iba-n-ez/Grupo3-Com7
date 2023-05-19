@@ -15,6 +15,8 @@ import inmueble_por_presupuesto
 from inmueble_por_presupuesto import buscar_por_presupuesto
 import funcion_eliminar
 from funcion_eliminar import eliminar
+import funcion_cambiar_estado
+from funcion_cambiar_estado import cambiar_estado
 
 inmuebles = []        #lista con el total de inmuebles
 inmuebles = [{'año': 2010, 'metros': 150, 'habitaciones': 4, 'garage': True, 'zona': 'C', 'estado': 'Disponible'},
@@ -30,7 +32,7 @@ while True:
                      '3 - Administrar inventario.\n'
                      '4 - Salir del programa.\n')
     if eleccion == '1':
-        
+        cambiar_estado(inmuebles)
     elif eleccion == '2':
         buscar_por_presupuesto(inmuebles)
     elif eleccion == '3':

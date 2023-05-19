@@ -4,7 +4,6 @@ from funcion_agregar import agregar
 def cambiar_estado(inmuebles):
     print('Cambio del estado de un inmueble: ')
     buscar = agregar()
-    print(buscar)
     for inmueble in inmuebles:
         if inmueble == buscar:
             print(f'Este inmueble coincide con todos los campos.')
