@@ -1,5 +1,7 @@
 '''
 Función agregar, sólo sirve para el desafío 4: La Inmobiliaria.
+Sólo agrega el inmueble si cumple con las las reglas de validación,
+de lo contrario devuelve False y un aviso.
 '''
 def agregar():
     print('Inserte los datos del inmueble: ')
